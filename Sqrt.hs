@@ -2,7 +2,7 @@
 -- Square root by Newton's method
 
 sqrt :: Double -> Double -> Double
-sqrt x epsilon = iter 1.0 x
+sqrt x tolerance = iter 1.0 x
 
   where
     iter :: Double -> Double -> Double
@@ -17,7 +17,7 @@ sqrt x epsilon = iter 1.0 x
     average x y = (x + y) / 2.0
 
     goodEnough :: Double -> Double -> Bool
-    goodEnough guess x = abs (guess * guess - x) < epsilon
+    goodEnough guess x = abs (guess * guess - x) < tolerance
 
 
 main = do

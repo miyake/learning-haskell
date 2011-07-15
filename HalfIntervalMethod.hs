@@ -19,8 +19,8 @@ search f negPoint posPoint
     testValue = f midPoint
 
     closeEnough :: Double -> Double -> Bool
-    closeEnough x y = abs (x - y) < epsilon
-      where epsilon = 0.001
+    closeEnough x y = abs (x - y) < tolerance
+      where tolerance = 0.001
 
 average :: Double -> Double -> Double
 average x y = (x + y) / 2.0
