@@ -27,6 +27,7 @@ average x y = (x + y) / 2.0
 
 
 main = do
+  putStrLn $ show $ execute (\x -> x * x * x - 2.0 * x - 3.0) 1.0 2.0
   putStrLn $ show $ execute sin (-1.0) 1.0
   putStrLn $ show $ execute sin 1.0 (-1.0)
   putStrLn $ show $ execute sin 1.0 5.0
