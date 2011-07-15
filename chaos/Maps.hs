@@ -10,13 +10,13 @@ tent :: Map1d
 tent x
   | 0.0 <= x && x <= 0.5 = 2.0 * x
   | 0.5 <  x && x <= 1.0 = 2.0 - 2.0 * x
-  | otherwise            = error "Maps.text: range error"
+  | otherwise            = error "Maps.tent: range error"
 
 bernoulli :: Map1d
 bernoulli x
   | 0.0 <= x && x <= 0.5 = 2.0 * x
   | 0.5 <  x && x <= 1.0 = 2.0 * x - 1.0
-  | otherwise            = error "Maps.text: range error"
+  | otherwise            = error "Maps.bernoulli: range error"
 
 nathanson :: Integer -> Double -> Map1d
 nathanson p delta
